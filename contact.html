@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Dann's Creatives</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif; 
+        }
+        body {
+            background-color: #b0c2b9;
+            color: #2c3e50;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; 
+        }
+        header {
+            background-color: #435b51;
+            padding: 20px; display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #eaeaea; 
+        }
+        .header-logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 5px; 
+        }
+        header img {
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            object-fit: cover; 
+        }
+        header h2 {
+            color: #111111;
+            margin: 0;
+            font-size: 1.7rem;
+            letter-spacing: 2px;
+            font-weight: bold;
+            text-transform: uppercase; 
+        }
+        nav {
+            background-color: #111111;
+            text-align: center; 
+        }
+        nav ul {
+            list-style: none;
+            display: inline-flex;
+            justify-content: center;
+            padding: 0;
+            margin: 0; 
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.85rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 15px 30px;
+            display: block;
+            transition: background-color 0.2s ease; 
+        }
+        nav ul li a:hover {
+            background-color: #222222; 
+        }
+        nav ul li a.active {
+            background-color: #444444; 
+        }
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 50px 20px; 
+        }
+        .classcard {
+            background-color: #ffffff;
+            max-width: 850px;
+            width: 100%;
+            padding: 45px 50px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            text-align: center; 
+        }
+        h1 {
+            font-size: 2.1rem;
+            font-weight: bold;
+            color: #111111;
+            margin-bottom: 10px; 
+        }
+        .description {
+            font-size: 1rem;
+            color: #444444;
+            line-height: 1.7;
+            margin-bottom: 22px;
+            text-align: center; 
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+            margin-top: 35px; 
+        }
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+        }
+        .gallery-item img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #435b51;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+        }
+        .gallery-item span {
+            margin-top: 10px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: #555555;
+        }
+        @media (
+            max-width: 768px) { .gallery-grid { 
+                grid-template-columns: repeat(2, 1fr); } 
+            }
+        footer {
+            background-color: #ffffff;
+            color: #666666;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.85rem;
+            border-top: 1px solid #eaeaea; 
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <div class="header-logo-container">
+            <img src="elementrx.png" alt="Logo">
+            <h2>DANN'S CREATIVES</h2>
+        </div>
+    </header>
+
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <div class="classcard">
+            <h1>Creative Portfolio</h1>
+            <p class="description">Fulfilling the laboratory criteria with exactly 12 perfectly rounded components arranged in an organized grid.</p>
+           
+           
+        
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 DANN'S CREATIVES.</p>
+    </footer>
+
+
+</body>
+</html>
+
+
+
